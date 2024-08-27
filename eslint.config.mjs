@@ -12,6 +12,9 @@ export default tseslint.config(
   eslintPluginPrettierRecommended,
   ...tseslint.configs.recommended,
   {
-    rules: {},
+    rules: {
+      'prettier/prettier': 'error',
+      'no-console': 'warn',
+    },
   },
 );
